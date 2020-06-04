@@ -1,0 +1,143 @@
+<html>
+  <head>
+    <title>landing</title>
+  </head>
+  <body>
+  
+  <main>
+  
+  
+    <div class="intro">
+      <h1>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Version 9.1 of Angular Now Available<br> &nbsp; &nbsp; &nbsp;— TypeScript 3.8, faster builds, and more</h1>
+        <br>
+        <br>
+        <img class="circular" src="assets/icon/1_y_L34o3bW0QELQm1KOFMTw.jpeg" alt="1_y_L34o3bW0QELQm1KOFMTw.jpeg">
+        <p class="author-name">Stephen Fluin</p><button>Follow</button><br>
+        <p class="read-time">mar 25 &nbsp;.&nbsp; <time>3</time>min read</p>
+        <br>
+        <br>
+        <p>We just released Version 9.1 of Angular. This is a minor release of the framework and the CLI that is a drop-in replacement for 9.0 containing new features and bug fixes.</p>
+        <img src="assets/landingpage/0*8X-LhY0W2PMgPzsj.jpg" alt="0*8X-LhY0W2PMgPzsj.jpg">
+    </div>
+   
+    <div class="Build">
+    <h1>Build Speed Improvements</h1>
+    
+        <p>Today, the Angular libraries you use are made compatible with the Ivy compiler via our ngcc tool. Previously, the ngcc compilation pass covered all of your Angular library dependencies sequentially. In 9.1, we’ve improved the speed of ngcc, and allowed it to compile multiple packages concurrently.</p>
+    
+        <p>These changes will help make builds faster and improve reliability for teams with monorepository-style workspace layouts.</p>
+    </div>
+    <div class="TypeScript">
+    
+      <h1>TypeScript 3.8</h1>
+    
+        <p>We’ve added support for TypeScript 3.8, in addition to our existing support for 3.6 and 3.7.</p>
+    
+        <p>This release adds many great features to the TypeScript language, including:</p>
+    <ul>
+        <li>    Type-Only Imports and Exports</li>
+        <li>        ECMAScript Private Fields    </li>
+        <li>Top level await</li>
+    </ul>
+          <a href="#">Read all about TypeScript 3.8.</a>
+    
+    </div>
+    
+    <div class="CLI">
+    
+      <h1>New CLI Component Generator Option <code>displayBlock</code></h1>
+          <p>Angular components are displayed inline by default, as that’s the default for most DOM elements. It’s very common for developers to want components to use the display: block style. When you create a new component, you can now set this up automatically.</p>
+    
+         <p><code> generate component my-component --displayBlock</code></p>
+    
+    </div>
+    
+    <div class="turn">
+    
+      <h3>To turn this on by default, set the </h3>
+    
+          <p>schematics.@schematics/angular:component.displayBlock key in your angular.json to true, or use:</p>
+    
+    </div>
+    
+    <div class="config">
+    
+          <p><code> config schematics.@schematics/angular:component.displayBlock true</code></p>
+    
+    
+    </div>
+    
+    <div class="end">
+    
+      <h1>End-to-End tests now support <code>grep</code> and <code>invertGrep</code></h1>
+    
+        <p>When running end-to-end tests, we now pass the grep and invertGrep options to the Protractor builder, allowing you to more easily choose the test you want to run.</p>
+    
+    
+        <code>ng e2e --grep searchTerm</code>
+    
+    
+    </div>
+    
+    <div class="improved">
+    
+        <h1>Improved HTML & Expression Syntax Highlighting</h1>
+        <p>If you use VSCode and our Language Service Extension, starting today our extension will allow your IDE to syntax highlight expressions in your templates, using a TypeScript-like formatter. It will also add syntax highlighting to your inline HTML templates in your components.</p>
+    
+        <p>Note: We worked with the authors of angular2-inline and vscode-angular-html on these features. If you use either of these extensions, you’ll need to disable them for this functionality to work.</p>
+    
+    </div>
+    
+    <div class="TSLint">
+    
+      <h1>TSLint 6.1 by default</h1>
+        <p>Newly created projects will now use TSLint 6.1 by default. If you want to migrate to the latest version, make sure you are on version 9.1 first, then you can opt-in via:</p>
+        <p><code>ng update @angular/cli --migrate-only tslint-version-6</code></p>
+        <p>We do not run this migration automatically because there are some minor breaking changes in TSLint 6.1.</p>
+    </div>
+    
+    <div class="other">
+    
+    <h1>Other Changes</h1>
+        <p>This release includes lots of other bug fixes, performance improvements, and minor features. Version 9.1 also improves the compatibility story with our new compiler and runtime. If you previously attempted to enable Ivy with version 9.0 and ran into issues, try again with version 9.1.</p>
+        <p>See the full list of recent changes in our framework changelog, CLI changelog, and components changelog.</p>
+    </div>
+    
+    <div class="update">
+    
+      <h1>How to Update</h1>
+        <p>Update to the latest version of Angular to get access to these new capabilities and bug fixes.</p>
+        <p><code>ng update @angular/cli @angular/core</code></p>
+    </div>
+    
+    <div class="Next">
+    
+      <h1>What’s Next?</h1>
+        <p>This is the last planned minor release for 9.x. As we start work towards 10.0, you should expect to see 10.0 prereleases usually once per week, even though they will contain only minimal changes at first.  </p>
+    
+        <p>Thank you to Kara Erickson, Dave Shevitz, Igor Minar, Keen Liau, Charles Lyding, and Alan Agiusfor their work on this post.</p>
+    </div>
+</main>
+
+    <footer>
+      <div class="one">
+        <h1>Discover Medium</h1>
+          <p>Welcome to a place where words matter. On Medium, smart voices and original ideas take center stage - with no ads in sight.<a href="">Watch</a></p>
+      </div> 
+      <div class="two">
+          <h1>Make Medium yours</h1>
+          <p> Follow all the topics you care about, and we’ll deliver the best stories for you to your homepage and inbox.<a href=""> Explore</a></p> 
+      </div>
+     <div class="three">
+  
+          <h1>Become a member</h1>
+            <p>Get unlimited access to the best stories on Medium — and support writers while you’re at it. Just $5/month.<a href="">Upgrade </a> </p>
+       </div>
+            <a href="">about</a>
+            <a href="">help</a>
+            <a href="">legal</a>
+            
+    </footer>
+  
+  </body>
+  </html>

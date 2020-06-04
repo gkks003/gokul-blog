@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>testing sign</title>
+  </head>
+  <body>
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <label>email</label>
+      <input type="text" name="email" ngModel email="true">
+      <br>
+      <br>
+      <br>
+      <br>
+      <label>password</label>
+      <input type="password" name="password" ngModel password="true">
+      <br>
+      <br>
+      <br>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
